@@ -1,0 +1,31 @@
+# Crawlers Setup
+User-agent: *
+Crawl-delay: 10
+
+# Directories
+User-agent: *
+Disallow: /chart_PDF/
+Disallow: /classes/
+Disallow: /validation/
+Disallow: /vendor/
+
+# Files
+User-agent: *
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /config.php
+Disallow: /contact.php
+Disallow: /bootstrap.php
+Disallow: /edit.php
+Disallow: /fpdf.php
+Disallow: /admin_upload.php
+Disallow: /logout.php
+
+User-agent: Googlebot
+Allow: .js
+Allow: .css
+
+User-agent: archiver
+Disallow: /
+
+Sitemap: https://webshop.smarty.rs/sitemap.xml
